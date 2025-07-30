@@ -56,7 +56,8 @@ export default defineConfig({
 			'@com': resolve(__dirname, 'src/components'),
 		},
 	},
-	base: '/',
+	// 仓库名
+	base: '/demo/',
 	server: {
 		port: 1085,
 	},
