@@ -10,6 +10,9 @@ export default defineConfig({
       targets: ["defaults", "not IE 11"],
     }),
   ],
+  build: {
+    outDir: "docs",
+  },
   resolve: {
     alias: {
       "@": resolve(__dirname, "src"),
