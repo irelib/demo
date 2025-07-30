@@ -60,4 +60,7 @@ export default defineConfig({
 	server: {
 		port: 1085,
 	},
+	build: {
+		outDir: 'docs', // 输出目录为 docs
+	},
 });
