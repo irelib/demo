@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    /* ✨ 基本编译选项 */
+    "target": "ES2020", // 编译后的目标 JS 版本（支持 ES2020 特性）
+    "module": "ESNext", // 使用 ES 模块化（Node >=14 可用）
+    "useDefineForClassFields": true, // 使用 `define` 来定义类字段（符合 ECMAScript 新规范）
+
+    /* 📦 模块解析选项 */
+    "moduleResolution": "bundler", // 使用打包工具（如 Vite/ESBuild）相同的模块解析方式
+    "allowImportingTsExtensions": true, // 允许导入带有 `.ts` 和 `.tsx` 扩展名的模块（Vite/ESBuild 需要）
+    "allowSyntheticDefaultImports": true, // 允许默认导入没有默认导出的模块（适合 ESM 模块与 CommonJS 混用）
+    "resolveJsonModule": true, // 允许导入 JSON 文件作为模块
+
+    /* 📂 输入输出配置 */
+    "noEmit": true, // 不生成输出文件，仅做类型检查
+    "isolatedModules": true, // 确保每个文件都是独立的模块，适合用在 Vite/ESBuild 等工具中
+
+    /* 📌 路径别名配置 */
+    "baseUrl": "./", // 模块解析的基础目录（这里是根目录）
+    "paths": {
+      "@/*": ["src/*"], // 设置路径别名，@ 代表 src 文件夹
+      "@com/*": ["src/components/*"] // 设置路径别名，@com 代表 src/components 文件夹
+    },
+
+    /* 🛡️ 严格模式 */
+    "strict": true, // 开启严格模式，增强类型安全性
+    "noUnusedLocals": true, // 禁止未使用的变量
+    "noUnusedParameters": true, // 禁止未使用的函数参数
+    "noFallthroughCasesInSwitch": true, // 防止 switch 语句中的 case 穿透
+
+    /* ⚙️ 其他实用选项 */
+    "skipLibCheck": true, // 跳过库文件类型检查，提升编译速度（通常不影响准确性）
+
+    /* 🧩 JSX 配置 */
+    "jsx": "preserve", // 保留 JSX，适合用于 React（通过打包工具处理 JSX）
+
+    /* 📖 包含的库 */
+    "lib": ["ES2020", "DOM", "DOM.Iterable"]
+  },
+
+  /* ✅ 包含的文件 */
+  "include": [
+    "src/**/*.ts", // 包含所有 TypeScript 文件
+    "src/**/*.tsx", // 包含所有 TypeScript JSX 文件
+    "src/**/*.vue" // 包含所有 Vue 文件
+  ],
+
+  /* 👌 引用其他 tsconfig */
+  "references": [{ "path": "./tsconfig.node.json" }] // 引用其他 TypeScript 配置文件，通常用于分离 Node 配置
+}
