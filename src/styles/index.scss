@@ -1,0 +1,144 @@
+// 遮罩样式
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0);
+	backdrop-filter: blur(0);
+	transition:
+		background-color 0.2s,
+		backdrop-filter 0.25s;
+}
+
+// 卡片样式
+.card {
+	background-color: var(--td-bg-color-container);
+	border-radius: var(--td-radius-medium);
+	box-shadow: var(--td-shadow-1);
+	box-sizing: border-box;
+	padding: 20px;
+
+	& > .BaseForm > .t-form > .t-row {
+		row-gap: 20px;
+
+		.t-form__item {
+			margin-bottom: 0 !important	;
+		}
+	}
+}
+
+// 对话框垂直居中样式
+.dialog-align-center .t-dialog__position {
+	padding: 0 !important;
+	align-items: center !important;
+}
+
+// 拖拽列表样式
+.vue-draggable {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: var(--td-size-3);
+	overflow-y: auto;
+
+	& > * {
+		height: 32px;
+		display: flex;
+		align-items: center;
+		color: var(--td-text-color-primary);
+		font-size: 14px;
+		cursor: move;
+		border-radius: var(--td-radius-large);
+		background-color: var(--td-bg-color-component);
+		padding: 0 var(--td-comp-paddingLR-s);
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+
+		&.disabled,
+		&.sortable-ghost {
+			cursor: no-drop;
+			color: var(--td-text-color-disabled);
+			background-color: var(--td-bg-color-secondarycontainer);
+		}
+
+		& > .t-icon {
+			margin-right: var(--td-comp-paddingLR-xs);
+		}
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+// 内容不可选中
+.no-select {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+// flex布局居中对齐
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// flex布局两边对齐
+.flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// flex布局末尾对齐
+.flex-end {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+// 滚动条样式
+.common-scrollbar {
+	width: 100%;
+	height: 100%;
+
+	.os-scrollbar-horizontal {
+		.os-scrollbar-handle {
+			height: 6px !important;
+
+			&:hover {
+				height: 8px !important;
+			}
+		}
+	}
+
+	.os-scrollbar-vertical {
+		.os-scrollbar-handle {
+			width: 6px !important;
+
+			&:hover {
+				width: 8px !important;
+			}
+		}
+	}
+
+	.os-scrollbar-handle {
+		cursor: pointer;
+		background-color: var(--my-bg-color);
+
+		&:hover {
+			background-color: var(--my-bg-color-hover);
+		}
+
+		&:active {
+			background-color: var(--my-bg-color-active);
+		}
+	}
+}

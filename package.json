@@ -2,29 +2,35 @@
   "name": "demo",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite --host --open",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.21",
-    "vue-draggable-plus": "^0.6.0",
-    "vue-router": "^4.5.0",
+    "@vueuse/core": "^13.0.0",
+    "axios": "1.8.2",
+    "dayjs": "^1.11.13",
+    "es-toolkit": "^1.31.0",
+    "nprogress": "^0.2.0",
     "overlayscrollbars-vue": "^0.5.9",
     "reset-css": "^5.0.2",
-    "tdesign-vue-next": "^1.15.1"
+    "tdesign-vue-next": "^1.15.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
+    "@types/nprogress": "^0.2.3",
     "@vitejs/plugin-legacy": "^5.4.1",
     "@vitejs/plugin-vue": "^5.0.4",
-    "sass": "^1.77.4",
     "prettier": "^3.3.2",
+    "sass": "^1.77.4",
     "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
     "vite": "^5.2.0",
-    "vite-plugin-node-polyfills": "^0.23.0",
+    "vite-plugin-node-polyfills": "^0.24.0",
     "vite-svg-loader": "^5.1.0",
     "vue-tsc": "^2.0.6"
   }

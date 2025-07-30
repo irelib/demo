@@ -1,0 +1,16 @@
+:root,
+:root[theme-mode='light'] {
+	--my-bg-color: rgba(0, 0, 0, 0.25);
+	--my-bg-color-hover: rgba(0, 0, 0, 0.35);
+	--my-bg-color-active: rgba(0, 0, 0, 0.45);
+	--my-bg-color-float: rgba(234, 234, 234, 0.5);
+	--my-comp-shadow: rgba(0, 0, 0, 0.04) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+:root[theme-mode='dark'] {
+	--my-bg-color: rgba(255, 255, 255, 0.3);
+	--my-bg-color-hover: rgba(255, 255, 255, 0.4);
+	--my-bg-color-active: rgba(255, 255, 255, 0.55);
+	--my-bg-color-float: rgba(234, 234, 234, 0.05);
+	--my-comp-shadow: rgba(255, 255, 255, 0.04) 0 10px 15px -3px, rgba(255, 255, 255, 0.045) 0px 4px 6px -2px;
+}
