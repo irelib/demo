@@ -1,4 +1,4 @@
-System.register(["./index-legacy-l6fqEUYc.js","./close-legacy-CDVA8IxE.js","./dialog-legacy-DYC298FD.js"],(function(e,l){"use strict";var a,n,t,i,s,c,o,u,r,v,d;return{setters:[e=>{a=e.d,n=e.r,t=e.o,i=e.c,s=e.a,c=e.w,o=e.b},e=>{u=e.w,r=e.B},e=>{v=e._,d=e.a}],execute:function(){
+System.register(["./index-legacy-BM1rWQ3B.js","./close-legacy-b_14xmmM.js","./dialog-legacy-7oGdOwRd.js"],(function(e,l){"use strict";var a,n,t,i,s,c,o,u,r,v,d;return{setters:[e=>{a=e.d,n=e.r,t=e.o,i=e.c,s=e.a,c=e.w,o=e.b},e=>{u=e.w,r=e.B},e=>{v=e._,d=e.a}],execute:function(){
 /**
        * tdesign v1.15.5
        * (c) 2025 tdesign
