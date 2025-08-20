@@ -14,7 +14,6 @@
     "es-toolkit": "^1.31.0",
     "nprogress": "^0.2.0",
     "overlayscrollbars-vue": "^0.5.9",
-    "reset-css": "^5.0.2",
     "tdesign-vue-next": "^1.15.5",
     "vue": "^3.4.21",
     "vue-router": "^4.5.0"
