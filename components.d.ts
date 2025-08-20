@@ -19,5 +19,6 @@ declare module 'vue' {
     TMenu: typeof import('tdesign-vue-next')['Menu']
     TMenuItem: typeof import('tdesign-vue-next')['MenuItem']
     TSubmenu: typeof import('tdesign-vue-next')['Submenu']
+    TTable: typeof import('tdesign-vue-next')['Table']
   }
 }

@@ -1,1 +1,0 @@
-System.register(["./index-legacy-Cjtba7_K.js"],(function(e,t){"use strict";var n,r,u;return{setters:[e=>{n=e._,r=e.i,u=e.j}],execute:function(){e("default",n({},[["render",function(e,t){return r(),u("div",null,"123")}]]))}}}));
